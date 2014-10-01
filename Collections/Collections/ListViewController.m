@@ -60,4 +60,13 @@
     return cell;
 }
 
+#pragma mark - UICollectionViewLayout delegate methods
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize cellSize = CGSizeMake(100.0, 100.0);
+    
+    return cellSize;
+}
+
 @end
